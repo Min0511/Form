@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="full-screen">
+
+        <div class="screen-left">
+            <div>
+                <div>
+                    <img src="images/odin-lined.png">
+                    <h1>ODIN</h1>
+                </div>
+            </div>
+            <div>
+                <span>Photo by Halie West on Unsplash</span>
+            </div>
+        </div>
+
+        <div class="screen-right">
+            <div>
+                <div>
+                    <P>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</P>
+                    <span>You know you want to.</span>
+                </div>
+            </div>
+            <div>
+                <form id="profile" action="#" method="post">
+                    <h2>Let's do this!</h2>
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name" pattern=[a-zA-Z]+ required>
+                    </div>
+                    <div>
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" pattern=[a-zA-Z]+ required>
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="tell">PHONE NUMBER</label>
+                        <input type="tell" name="tell" id="tell" required>
+                    </div>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" class="error" required>
+                        <div></div>
+                    </div>
+                    <div>
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-password" class="error" required>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <button type="submit" form="profile">Create Account</button>
+                <span> Already have an account? <a href="#">Log in</a> </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

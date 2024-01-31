@@ -1,0 +1,168 @@
+body, h1, h2, h3, p, ul, li, figure, figcaption, div, label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+
+  @font-face {
+    font-family: 'Norse-Bold';
+    src: url('fonts/Norse-Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  .full-screen{
+    display:grid;
+    grid-template-columns: 2fr 3fr;
+    width: 95vw;
+    height: 95vh;
+  }
+
+  .screen-left{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-image: url("images/New_photo.avif");
+  }
+
+  .screen-left div:first-child{
+    display:flex;
+    align-items: center;
+  }
+
+  .screen-left div:first-child>div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width:100%;
+    opacity: 0.6;
+    color:white;
+    font-family: 'Norse-bold', Arial, sans-serif;
+    font-weight:bold;
+    font-size:32px;
+  }
+
+  img{
+    height: 80px;
+  }
+
+  .screen-left div:last-child{
+    display:flex;
+    align-items: last baseline;
+    justify-content: center;
+    color: white;
+    font-size:12px;
+  }
+
+  .screen-right{
+    display: grid;
+    grid-template-rows: 3fr 2fr 3fr;  
+    background-color:honeydew;
+  }
+
+  .screen-right div:first-child{
+    display:flex;
+    align-items: last baseline;
+    font-weight:bold;
+  }
+
+  .screen-right> div:first-child> div{
+    margin: 20px;
+    margin-bottom: 30px;
+    display:flex;
+    flex-direction: column;
+    font-size:18px;
+  }
+  
+  .screen-right > div:first-child > div p{
+    margin-bottom:14px;
+  }
+  .screen-right> div:nth-child(2){
+    background-color: white;
+  }
+
+  .screen-right form{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: repeat(4, 1fr);
+    margin-left:20px;
+    margin-right:80px;
+  }
+
+  h2 {
+    grid-column: 1/3;
+    grid-row:1/2;
+ 
+  }
+
+  label{
+    font-size: 8px;
+    position: absolute;
+    margin-top:5px;
+  }
+
+  input{
+    appearance: none;
+    position: relative;
+    margin-top:18px;
+    border:1px #E5E7EB solid;
+    border-radius: 8px;
+  }
+
+  input[type="password"] + div{
+    height:8px;
+    margin:0;
+    padding:0;
+    position: absolute;
+    margin-top:-10px;
+  }
+
+  .error {
+    border: 1px solid red;
+  }
+  
+  .error:focus {
+    outline: transparent;
+    border: 1px solid red;
+  }
+
+  input[type="password"].error + div::before{
+    content : "* Passwords do not match";
+    color: red;
+    font-size:8px;
+  }
+  .screen-right> div:last-child{
+    display:flex;
+    flex-direction: column;
+  }
+  button{
+    background-color: #596D48;
+    color:white;
+    text-align: center;
+    border-radius: 8px;
+    height: 45px;
+    width: 180px;
+    margin: 20px;
+  }
+
+  button+span{
+    margin-left: 20px;
+  }
